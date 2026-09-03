@@ -73,7 +73,10 @@ export function Sidebar() {
       </nav>
 
       <div className="border-t border-slate-200 p-4">
-        <div className="flex items-center gap-3 rounded-xl bg-slate-50 p-3">
+        <Link
+          href="/profile"
+          className="flex items-center gap-3 rounded-xl bg-slate-50 p-3 transition-colors hover:bg-slate-100"
+        >
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-sm font-semibold text-indigo-700">
             AD
           </div>
@@ -81,7 +84,7 @@ export function Sidebar() {
             <p className="truncate text-sm font-medium text-slate-900">Admin</p>
             <p className="truncate text-xs text-slate-500">admin@example.com</p>
           </div>
-        </div>
+        </Link>
       </div>
     </aside>
   );
